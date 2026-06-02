@@ -1,0 +1,8 @@
+log_path: "/var/log/nginx/access.log"
+regexp: " 5[0-9]{2} "
+webhook_url: "https://discord.com/api/webhooks/..."
+rate_limit:
+  enabled: true
+  max_alerts_per_window: 5
+  window_duration: "1m"
+  aggregation_enabled: true
